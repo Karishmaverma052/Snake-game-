@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background:url(/bg.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .game-container {
+    background: linear-gradient(yellow,rgba(255, 72, 0, 0.463));
+    margin: 20px auto;
+    width: 64vmin;
+    height: 64vmin;
+    position: relative;
+    border: 2px solid #333;
+    grid-template-rows: repeat(17, 1fr);
+    grid-template-columns: repeat(17, 1fr);
+  }
+  
+  .snake, .food, .head {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+  }
+  
+  
+  .snake {
+    background-color: green;
+    border: .25vmin solid white;
+    border-radius: 12px;
+  }
+  
+  .food {
+    background: linear-gradient(red,purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+  }
+  
+  #score {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
